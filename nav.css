@@ -1,0 +1,140 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo {
+    margin: 5px;
+    border-radius: 50%;
+}
+
+#nav-logo:hover {
+    border: 2px solid rgb(129, 214, 126);
+}
+
+#nav-title-anchor {
+    color: rgb(36, 216, 186);
+    text-decoration: none;
+}
+
+#nav-title-anchor:hover {
+    color: rgb(129, 214, 126);
+}
+
+#nav-title {
+    font-size: 50px;
+}
+
+#nav-search-box {
+    padding-left: 9px;
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    color: rgb(36, 216, 186);
+    border: solid rgb(36, 216, 186);
+    background-color: rgb(255, 255, 255);
+}
+
+#nav-search-box::placeholder {
+    color: rgb(36, 216, 186);
+}
+
+#nav-search-box:hover {
+    border: 3px solid rgb(63, 209, 136);
+}
+
+#nav-search-box:focus {
+    outline: none;
+}
+
+.nav-menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#menu-bar {
+    margin-right: 15px;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border: 1px solid rgb(36, 216, 186);
+    color: rgb(36, 216, 186);
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+#menu-bar:hover {
+    background: rgb(36, 216, 186);
+    color: aliceblue;
+}
+
+@media (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid rgb(36, 216, 186);
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-right: 10px;
+        border-bottom: 1px solid rgb(36, 216, 186);
+    }
+
+    #nav-title {
+        font-size: 6vw;
+    }
+
+    #nav-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-menu-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #menu-bar {
+        text-align: center;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-right: 5px;
+        padding: 5px 5px;
+        border: 0;
+    }
+
+    #nav-search-box {
+        width: 100px;
+        height: 25px;
+    }
+}

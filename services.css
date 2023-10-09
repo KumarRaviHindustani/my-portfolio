@@ -1,0 +1,58 @@
+.service {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    margin-left: .5%;
+}
+
+#fieldset {
+    width: 30%;
+    padding: 10px;
+}
+
+#legend {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.h2 {
+    background-color: aquamarine;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 5px 5px;
+    font-size: 4vw;
+    margin-bottom: 5vh;
+}
+
+.p2 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: crimson;
+    text-decoration: underline;
+}
+.hh{
+    font-size: 2vw;
+}
+@media (max-width: 600px){
+    .service {
+        display: block;
+        width: 93vw;
+    }
+    #fieldset {
+        width: 85vw;
+
+    }
+    .h2 {
+        font-size: 10vw;
+    }
+    #legend {
+        font-size: 8vw;
+    }
+    .p2 {
+        font-size: 9vw;
+    }
+    .hh{
+        font-size: 6vw;
+    }
+}
